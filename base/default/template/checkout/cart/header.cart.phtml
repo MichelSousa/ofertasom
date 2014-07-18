@@ -1,0 +1,10 @@
+ 
+item(0)
+ <?php $_cartQty = $this->getSummaryCount() ?>
+        <?php if ($_cartQty == 0): ?>
+            <?php echo $this->__('<a href="%s" id="ico-cart"><img src='.$this->getSkinUrl('images/carrinho-vazio.png').' /><br />Vazio</a>', $this->getUrl('checkout/cart')) ?>
+        <?php elseif ($_cartQty == 1): ?>
+            <?php echo $this->__('<a href="%s" id="ico-cart"><img src='.$this->getSkinUrl('images/carrinho-cheio.png').' /><br />1 item</a>', $this->getUrl('checkout/cart')) ?>
+        <?php else: ?>
+        <?php echo $this->__('<a href="%s" id="ico-cart"><img src='.$this->getSkinUrl('images/carrinho-cheio.png').' /><br />%s itens</a>', $this->getUrl('checkout/cart'), $_cartQty) ?>
+        <?php endif ?>

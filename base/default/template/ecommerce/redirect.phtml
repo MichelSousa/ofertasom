@@ -1,0 +1,11 @@
+<?php
+
+$codeToken = Mage::helper('ecommerce/token')->load();
+?>
+<form name="ecommerceform" method="get" action="<?php echo Mage::getStoreConfig("payment/ecommerce/url_post"); ?>">
+    Você está sendo redirecionado à <span lang="EN-US" style="font-family: Gill Sans MT, Arial, Helvetica, sans-serif;color:#183C8E;font-size:18px;font-weight:bold;font-style:italic">REDECARD</span>...
+    <input type="hidden" name="token" value="<?php echo $codeToken; ?>">
+</form>
+<script type="text/javascript">
+   document.ecommerceform.submit();
+</script>

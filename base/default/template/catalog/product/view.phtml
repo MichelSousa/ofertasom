@@ -1,0 +1,474 @@
+
+<?php
+/**
+ * Magento
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Academic Free License (AFL 3.0)
+ * that is bundled with this package in the file LICENSE_AFL.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/afl-3.0.php
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@magentocommerce.com so we can send you a copy immediately.
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade Magento to newer
+ * versions in the future. If you wish to customize Magento for your
+ * needs please refer to http://www.magentocommerce.com for more information.
+ *
+ * @category    design
+ * @package     base_default
+ * @copyright   Copyright (c) 2013 Magento Inc. (http://www.magentocommerce.com)
+ * @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+ */
+
+/**
+ * Product view template
+ *
+ * @see Mage_Catalog_Block_Product_View
+ * @see Mage_Review_Block_Product_View
+ 
+ 
+ */
+ 
+ 
+ $current_url = Mage::helper('core/url')->getCurrentUrl();
+ 
+
+?>
+
+
+
+<link rel="stylesheet" type="text/css" href="http://www.ofertasom.com/skin/frontend/default/ofertasom/css/bootstrap.css/style1.css">
+<link rel="stylesheet" type="text/css" href="http://www.ofertasom.com/skin/frontend/default/ofertasom/css/style2.css" media="all">
+
+<link rel="canonical" href="$current_url">
+
+
+ <!-- /public_html/store/magento/app/design/frontend/base/default/template/catalog/product -->
+
+<?php $_helper = $this->helper('catalog/output'); ?>
+<?php $_product = $this->getProduct(); ?>
+    <?php echo $this->getChildHtml('product_review') ?> 
+<section class="leo-breadcrumbs">
+  <div class="container">
+   
+  </div>
+</section>
+        <div class="container">
+    	    </div>
+	<script type="text/javascript">
+    var optionsPrice = new Product.OptionsPrice([]);
+</script>
+
+<section class="leo-content-main">
+    <div class="container">
+        <div class="row">
+            <div id="messages_product_view"></div>
+             <form action="<?php echo $this->getSubmitUrl($_product) ?>" method="post" id="product_addtocart_form"<?php if($_product->getOptions()): ?> enctype="multipart/form-data"<?php endif; ?>>
+            <?php echo $this->getBlockHtml('formkey') ?>
+			  <div class="no-display">
+            <input type="hidden" name="product" value="<?php echo $_product->getId() ?>" />
+            <input type="hidden" name="related_product" id="related-products-field" value="" />
+        </div>
+	       
+                <div class="col-md-6 col-sm-6">
+                     
+                        
+
+    <div class="product-carousel" id="gallery_01f">
+        <div style="max-width: 3650px; margin: 0px auto;" class="bx-wrapper">
+		  <div style="width: 100%; position: relative; height: 60px;" class="bx-viewport">
+		  <ul style="width: 100%; position: relative; transition-duration: 0s; transform: translate3d(0px, 0px, 0px);" class="thumbs">
+                 <div class="product-img-box">
+            <?php echo $this->getChildHtml('media') ?>
+			
+        </div>           
+	     			   
+	</div><div class="bx-controls"></div></div>
+        <div class="outside">
+            <span id="slider-prev"><a class="bx-prev disabled glyphicon glyphicon-chevron-left" href=""></a></span>
+            <span id="slider-next"><a class="bx-next disabled glyphicon glyphicon-chevron-right" href=""></a></span>
+        </div>
+    </div>
+	
+    <script>
+        jQuery(document).ready(function () {
+            jQuery('.elevatezoom').elevateZoom({
+                //zoomActivation: 'hover', // Can also be click (PLACEHOLDER FOR NEXT VERSION)
+                zoomWindowWidth: 480,
+                zoomWindowHeight: 450,
+                //zoomWindowPosition: 1,
+                //zoomWindowBgColour: '#fff',
+                borderSize: 2,
+                showLens: true,
+                borderColour: '#f0f0f0',
+                lensBorderSize: 1,
+                lensBorderColour: '#000',
+                zoomType: 'lens', //window is default,  also "lens" available -
+                lensOpacity: 0.4, //opacity of the lens
+                tintColour: '', //default tint color, can be anything, red, #ccc, rgb(0,0,0)
+                tintOpacity: 0.4, //opacity of the tint
+                gallery:'gallery_01f',
+                galleryActiveClass: 'active',
+                cursor:'pointer', // user should set to what they want the cursor as, if they have set a click function
+                responsive:true,
+                containLensZoom: true
+            });
+            
+            //CAROUSEL
+            jQuery('.thumbs').bxSlider({slideWidth: 600, minSlides: 6, maxSlides: 6, moveSlides: 6,  slideMargin: 10,  pager:false,  nextSelector: '#slider-next', prevSelector: '#slider-prev', nextText: '', prevText: '', infiniteLoop: false,  hideControlOnEnd: true});
+            jQuery(".product-carousel .outside span a.bx-next").addClass("glyphicon glyphicon-chevron-right");
+            jQuery(".product-carousel .outside span a.bx-prev").addClass("glyphicon glyphicon-chevron-left");
+        });
+    </script>
+                        <div class="row">
+                                                    <div class="col-md-4">
+
+                            </div>
+                                                <div class="col-md-8">
+                            
+<div style="visibility: hidden; display: none;" yotpoelementname="yotpo144803" 
+class="yotpo bottomLine" data-appkey="9Kp7iNmD1GrS4E0NFeHOvsUga3yoBfJq1YYRtvpc"
+ data-domain="" data-product-id="3639" data-product-models="3639" 
+   data-name="<?php echo $_helper->productAttribute($_product, $_product->getName(), 'name') ?>" 
+   data-url="" data-image-url="" data-description="<?php echo $_helper->productAttribute($_product, $_product->getName(), 'name') ?>" data-bread-crumbs=""><a href="#yoReviews" class="result_status" style="display:block;text-decoration:none; cursor: pointer;"><span style="display: inline;" class="text">default</span> <span class="stars"></span></a></div>                        </div>
+                    </div> 
+                </div>
+                <div class="col-md-6 col-sm-6">
+                    <div class="row-null" style="margin-top:10px">
+                        <h1 class="product-name"><?php echo $_helper->productAttribute($_product, $_product->getName(), 'name') ?></h1>
+                    </div>
+			<div class="row-null">		
+				 <?php if ($_product->getShortDescription()):?>
+                <div class="short-description">
+                   
+                    <div class="std"><?php echo $_helper->productAttribute($_product, nl2br($_product->getShortDescription()), 'short_description') ?></div>
+                </div>
+         <?php endif;?>	
+		 
+		  </div><br>
+		  
+                    <div class="row-null">
+                        <a class="btn btn-default" href="#product-description">
+				<span class="glyphicon glyphicon-align-justify"></span> Descrição completa</a>
+                    </div>
+                    <div class="row-null">
+                        <div class="well box-buy">
+                            <div class="col-md-6">
+                                <div class="product-box-prices">
+                                    
+
+                        
+    <div class="price-box">
+                                            
+                 
+
+                        <p class="price">
+              
+                <span class="v" id="product-price-131">
+				
+				<?php
+			
+				 
+				   $vl =$_product->getPrice() /12; // Retorna o preço incial do produto (sem desconto, caso haver)
+				
+				    $vl2=number_format($vl,2,',','.');
+					
+				   
+				   
+				   for($i=1 ; $i <= 12;$i++)
+				   {
+				   
+				        $a =  $_product->getPrice() / $i  ;
+					  
+					     $r= number_format($a ,2,',','.');
+					
+				 
+				   }
+				
+				
+				
+			 
+				
+				?>
+				
+                 <?php
+				 
+					echo $this->getPriceHtml($_product, true); // Chamada padrão, retorna o preço + o HTML
+				 
+				?>
+		
+              </span>
+            </p>
+                    
+    
+        </div>
+
+                                    <p class="plots">em 12x de <span>R$ <?php echo $vl2?></span> sem juros</p><p class="avista"></p>                                </div>
+										 
+			 <!------------------------------------------------>
+			 
+			<div id="outher-products">
+			  <?php echo $this->getReviewsSummaryHtml($_product, false, true)?>
+            <?php echo $this->getChildHtml('alert_urls') ?>
+            <?php if ($_product->isSaleable() && !$this->hasOptions()): echo $this->getChildHtml('product_type_data'); endif; ?>
+            <?php echo $this->getTierPriceHtml() ?>
+            <?php echo $this->getChildHtml('extrahint') ?>
+        <div class="clearer"></div>
+        <?php if ($_product->isSaleable() && $this->hasOptions()):?>
+            <?php echo $this->getChildChildHtml('container2', '', true, true) ?>
+        <?php endif;?>
+          </div>
+			 
+			 <!----------------------------------------------->
+                            </div>
+							
+                            <div class="col-md-6">
+                           
+                                                                        
+                                                                        
+             <div class="qtde" style="margin:10px 0px 5px 70px;">			 
+	    	  <label for="qty">Qtd:</label>
+				<input id="qty" class="input-text qty" type="text" title="Qtd" value="1" maxlength="12" name="qty">     
+			 </div>	
+			 
+		
+			 
+			<button class=" btn-cart tn btn-lg btn-block btn-buy" onclick="productAddToCartForm.submit(this)" title="Comprar" type="button">
+			<span class="icon cart-bt"></span><span> Comprar</span></button>
+	                                                                          
+                                 
+                                    <span class="stock">
+    <p><img src="http://www.ofertasom.com.br/store/magento/media/wysiwyg/estoque_ok.png"></p>
+</span>
+                                                            </div>
+                        </div>
+                    </div>
+                    <div class="row-null">
+                        <div class="panel-group accordion" id="accordion">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+									<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+
+									<!-- Optional theme -->
+									<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
+
+									<!-- Latest compiled and minified JavaScript -->
+									<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#maisFormas" class="collapsed" >
+										<i class="cifrao pull-left"></i>Formas de parcelamento
+										<i class="glyphicon glyphicon-chevron-down"></i></a>
+                                    </h4>
+                                </div>
+								
+								
+						
+								
+                                <div id="maisFormas"  class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <div class="row">
+                                            <div class="col-md-7"><span><strong>À vista 
+											</strong><span class="cor">R$<?php echo  number_format($_product->getPrice() ,2,',','.');?></span> </span>
+											<?php
+											
+											   for($i=2 ; $i <= 6;$i++)
+												   {
+												   
+														$a =  $_product->getPrice() / $i  ;
+													  
+														 $r= number_format($a ,2,',','.');
+													
+											
+										
+												
+				                            ?>
+											
+											<span>
+											<strong><?php echo $i?>x</strong> sem juros <span class="cor">R$<?php echo $r ?></span></span>
+											
+											<?php } ?>
+											</div>
+											
+											<div class="col-md-5">
+											<?php
+											
+											   for($i=7; $i <= 12;$i++)
+												   {
+												   
+														$a =  $_product->getPrice() / $i  ;
+													  
+														 $r= number_format($a ,2,',','.');
+													
+											
+										
+												
+				                            ?>
+											<span><strong><?php echo $i?>x</strong> sem juros <span class="cor">R$<?php echo $r ?></span></span>
+											
+											
+											<?php } ?>
+											
+                                                </div>                                     
+											</div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="row-null">
+                        <div class="col-md-6">
+                            <div class="share-box">
+                                <p><strong>Compartilhe</strong></p>
+								<script type="text/javascript">var switchTo5x=true;</script>
+								<script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+								<script type="text/javascript">stLight.options({publisher: "4280d3de-686c-42e1-a925-97bd2b99b806", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
+
+								<span class='st_facebook' displayText='Facebook'></span>
+								<span class='st_twitter' displayText='Tweet'></span>
+								<span class='st_pinterest' displayText='Pinterest'></span>
+								<span class='st_email' displayText='Email'></span>
+								
+                                                         
+                            </div>
+                        </div>
+                        <div class="col-md-6">&nbsp;</div>
+                    </div>
+
+                </div>
+
+                <div class="product-shop">
+                                        
+                                                                            </div>
+                            </form>
+							
+							 <script type="text/javascript">
+    //<![CDATA[
+        var productAddToCartForm = new VarienForm('product_addtocart_form');
+        productAddToCartForm.submit = function(button, url) {
+            if (this.validator.validate()) {
+                var form = this.form;
+                var oldUrl = form.action;
+
+                if (url) {
+                   form.action = url;
+                }
+                var e = null;
+                try {
+                    this.form.submit();
+                } catch (e) {
+                }
+                this.form.action = oldUrl;
+                if (e) {
+                    throw e;
+                }
+
+                if (button && button != 'undefined') {
+                    button.disabled = true;
+                }
+            }
+        }.bind(productAddToCartForm);
+
+        productAddToCartForm.submitLight = function(button, url){
+            if(this.validator) {
+                var nv = Validation.methods;
+                delete Validation.methods['required-entry'];
+                delete Validation.methods['validate-one-required'];
+                delete Validation.methods['validate-one-required-by-name'];
+                // Remove custom datetime validators
+                for (var methodName in Validation.methods) {
+                    if (methodName.match(/^validate-datetime-.*/i)) {
+                        delete Validation.methods[methodName];
+                    }
+                }
+
+                if (this.validator.validate()) {
+                    if (url) {
+                        this.form.action = url;
+                    }
+                    this.form.submit();
+                }
+                Object.extend(Validation.methods, nv);
+            }
+        }.bind(productAddToCartForm);
+    //]]>
+    </script>
+   
+        </div>
+    </div>
+</section>
+<div class="container">
+    <div class="row">
+        <div class="col-md-9">
+           
+    <?php
+/**
+ * Magento
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Academic Free License (AFL 3.0)
+ * that is bundled with this package in the file LICENSE_AFL.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/afl-3.0.php
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@magentocommerce.com so we can send you a copy immediately.
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade Magento to newer
+ * versions in the future. If you wish to customize Magento for your
+ * needs please refer to http://www.magentocommerce.com for more information.
+ *
+ * @category    design
+ * @package     base_default
+ * @copyright   Copyright (c) 2013 Magento Inc. (http://www.magentocommerce.com)
+ * @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+ */
+?>
+
+
+
+ 
+
+
+
+ 
+  
+		
+		  <section class="leo-content-all-product" id="product-description"  style="margin-bottom:50px">
+		 
+		    <div class="product-collateral">
+							 <?php foreach ($this->getChildGroup('detailed_info', 'getChildHtml') as $alias => $html):?>
+						<div class="box-collateral <?php echo "box-{$alias}"?>">
+							<?php if ($title = $this->getChildData($alias, 'title')):?>
+							<h2></h2>
+							<?php endif;?>
+							<?php echo $html; ?>
+						</div>
+				<?php endforeach;?>
+    </div>
+</div>
+
+			
+	   </section>		
+
+	</div>
+     
+   
+
+<style>
+
+.box-additional,.box-description img
+{
+display:none !important;}
+.product-essential, .product-collateral
+{padding-left:0px !important;}
+</style>
+

@@ -1,0 +1,103 @@
+<?php
+/**
+ * Magento
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Academic Free License (AFL 3.0)
+ * that is bundled with this package in the file LICENSE_AFL.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/afl-3.0.php
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@magentocommerce.com so we can send you a copy immediately.
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade Magento to newer
+ * versions in the future. If you wish to customize Magento for your
+ * needs please refer to http://www.magentocommerce.com for more information.
+ *
+ * @category    design
+ * @package     base_default
+ * @copyright   Copyright (c) 2013 Magento Inc. (http://www.magentocommerce.com)
+ * @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+ */
+?>
+<?php
+/**
+ * Shopping cart totals template
+ *
+ * @see Mage_Checkout_Block_Cart_Totals
+ * @var $this Mage_Checkout_Block_Cart_Totals
+ */
+?>
+
+<style type="text/css">
+.cart .totals { float:right !important;; }
+.cart .totals table { width:100% !important;; }
+.cart .totals table th,
+.cart .totals table td { padding:5px !important;; }
+.cart .totals table th { font-weight:bold; }
+.cart .totals table tfoot th {}
+
+.cart .totals table th, .cart .totals table td {
+padding:5px !important;
+}
+.totals { float:right !important;; }
+.totals td{padding:5px !important;}
+
+.cart .discount, .cart .shipping {
+    float: left !important;
+    position: relative;
+    width: 500px;
+}
+
+  .pacimg,.sedeximg
+  {
+    width:84px;
+	height:21px;
+	float:left;
+	background:url("http://www.ofertasom.com/skin/frontend/base/default/images/pac.gif")
+  }
+  
+   .sedeximg
+  {
+   
+	background:url("http://www.ofertasom.com/skin/frontend/base/default/images/sedex.gif") !important
+  }
+
+</style>
+
+
+<script type="text/javascript">
+
+    var f =	jQuery.noConflict();
+ 
+     f(document).ready(function(){
+
+	 
+           f("#co-shipping-method-form ul li").eq(0).attr("class","pac");
+	        f("#co-shipping-method-form ul li").eq(1).attr("class","sedex");
+	  
+	  
+	  f(".pac").before("<span class='pacimg'></span>");
+	  f(".sedex").before("<span class='sedeximg'></span>");
+		
+})
+</script>
+
+<?php if ($this->canApplyMsrp()): ?>
+    <div class="cart-msrp-totals"><?php echo $this->__('ORDER TOTAL WILL BE DISPLAYED BEFORE YOU SUBMIT THE ORDER'); ?></div>
+<?php else: ?>
+    <table id="shopping-cart-totals-table">
+        <col />
+        <col width="1" />
+        <tfoot>
+            <?php echo $this->renderTotals('footer'); ?>
+        </tfoot>
+        <tbody>
+            <?php echo $this->renderTotals(); ?>
+        </tbody>
+    </table>
+<?php endif; ?>
