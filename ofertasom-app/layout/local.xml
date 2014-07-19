@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout>
+  <default>
+  <!-- remove chamadas de blocos desnecessarias -->
+    <remove name="right.poll" />
+    <remove name="right.permanent.callout" />
+    <remove name="left.permanent.callout" />
+    <remove name="paypal.partner.right.logo" />
+  <!-- adiciona local stylesheet -->
+    <reference name="head">
+      <action method="addCss"><stylesheet>css/local.css</stylesheet></action>
+      <action method="addCss"><stylesheet>css/bootstrap.css</stylesheet></action>
+	  <action method="addJs"><script>bootstrap.js</script></action>
+    </reference>
+
+  </default>
+</layout>

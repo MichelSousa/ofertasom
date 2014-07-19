@@ -23,13 +23,6 @@
  * @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
  */
 
-/*
-  @Autor : Michel damasceno;
-  @email michel-damasceno@hotmail.com
-  @empresa Ofertasom
-  @facebokk https://www.facebook.com/michel.damasceno.5
-*/
-
 /* Reset ================================================================================= */
 * { margin:0; padding:0; }
 
@@ -237,233 +230,6 @@ p.control input.radio { margin-right:6px; }
 .form-list .customer-name-prefix .name-firstname,
 .form-list .customer-name-middlename .name-firstname { width:210px; }
 
-.sidebar .block .block-title {
-    background: none repeat scroll 0 0 #950308 ;
-    font-size: 14px !important;
-    font-weight: 600 !important;
-    line-height: 44px !important;
-    padding: 0 18px !important;
-    text-transform: uppercase !important;
-
-}
-
-.sidebar .block .block-title strong span {
-    color: white;
-    font-weight: 700;
-    line-height: 28px;
-    text-transform: uppercase;
-}
-.sidebar .block li {
-    padding: 5px 0 !important;
-}
-
-.dashboard .box {
-    background-color: #f8f7f5;
-    margin-bottom: 10px;
-    padding: 10px;
-	overflow: hidden;
-}
-
-.dashboard .box-info {
-    float: right;
-     width: 930px;
-}
-
-
-.toolbar {
-    background: none repeat scroll 0 0 #E0E0E0;
-    border-radius: 4px;
-    color:     #717171;
-    height: 40px;
-    margin: 0 0 30px;
-    padding: 0;
-}
-
-.toolbar .limiter {
-    color: #717171 !important;  
-    float: left;
-    padding: 0 20px;
-}
-
-/*======================================================================*/
-
-
-
-.toolbar .limiter label {
-    display: inline-block;
-    float: left;
-    line-height: 20px;
-    margin: 0 8px 0 0;
-}
-.toolbar .limiter .select-new {
-    color: #666666;
-    float: left;
-    margin: 0;
-}
-
-
-.toolbar .limiter .select-new .select-inner .jqTransformSelectWrapper {
-    background: none repeat scroll 0 0 #fff;
-    border: medium none;
-    height: 20px;
-    width: 70px !important;
-}
-
-.toolbar .limiter .select-new .select-inner .jqTransformSelectWrapper div span {
-    height: 20px;
-    line-height: 20px;
-    padding-left: 8px;
-}
-
-.toolbar .limiter .select-new .select-inner .jqTransformSelectWrapper div a.jqTransformSelectOpen {
-    background-color: #000;
-    background-position: center 8px;
-    height: 20px;
-    right: 0;
-    width: 20px;
-}
-.toolbar .limiter .select-new .select-inner .jqTransformSelectWrapper ul {
-    border: medium none;
-    border-radius: 0 6px 6px;
-    box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
-    left: 0 !important;
-    top: 21px;
-    width: 90px !important;
-}
-.toolbar .limiter .select-new .select-inner .jqTransformSelectWrapper ul a {
-    background-position: center 10px;
-    padding: 2px 6px;
-}
-.toolbar .limiter .select-new .select-inner select {
-    background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
-    border: medium none;
-    cursor: pointer;
-    width: 20px;
-}
-.toolbar .sort-by {
-    float: left;
-    margin: 5px 0 0;
-    padding: 0 20px;
-}
-.toolbar .sort-by label {
-    display: inline-block;
-    float: left;
-    line-height: 20px;
-    margin: 0 8px 0 0;
-}
-.toolbar .sort-by .select-new {
-    float: left;
-    margin: 0 5px 0 0;
-}
-.toolbar .sort-by .select-new .select-inner {
-    cursor: pointer;
-}
-.toolbar .sort-by .select-new .select-inner .jqTransformSelectWrapper {
-    background: none repeat scroll 0 0 #fff;
-    height: 20px;
-    width: 95px !important;
-}
-.toolbar .sort-by .select-new .select-inner .jqTransformSelectWrapper div span {
-    height: 20px;
-    line-height: 20px;
-    padding-left: 8px;
-}
-.toolbar .sort-by .select-new .select-inner .jqTransformSelectWrapper div a.jqTransformSelectOpen {
-    background-color: #000;
-    background-position: center 8px;
-    height: 20px;
-    right: 0;
-    width: 20px;
-}
-.toolbar .sort-by .select-new .select-inner .jqTransformSelectWrapper ul {
-    border: medium none;
-    border-radius: 0 6px 6px;
-    box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
-    left: 0 !important;
-    top: 21px;
-    width: 115px !important;
-}
-.toolbar .sort-by .select-new .select-inner .jqTransformSelectWrapper ul a {
-    background-position: center 10px;
-    padding: 2px 6px;
-}
-.toolbar .sort-by .select-new .select-inner select {
-    background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
-    border: medium none;
-    cursor: pointer;
-    width: 50px;
-}
-.toolbar .sort-by .set-desc, .toolbar .sort-by .set-asc {
-    background-image: url("../images/arrow-downup.png");
-    background-position: left top;
-    background-repeat: no-repeat;
-    display: block;
-    float: left;
-    height: 10px;
-    margin: 5px 0 0 7px;
-    width: 7px;
-}
-.toolbar .sort-by .set-desc {
-    background-position: left -10px;
-}
-.toolbar .pager {
-    float: right;
-    margin: 5px 0 0;
-}
-/*=====================================================================*/
-
-.col-main .my-account {
-    float: right;
-    padding: 10px;
-    width: 930px;
-}
-
-.dashboard .box .box-title h3, .dashboard .box .box-title h4 {
-    float: left;
-    margin: 0;
-}
-
-.dashboard .box .box-title {
-    border-bottom: 1px solid #e5e5e5;
-    margin: 0 0 10px;
-    overflow: hidden;
-    padding: 0 0 2px;
-    text-align: right;
-}
-
-.sidebar .block li a{
-
-	color: #777777 !important;
-}
-
-
-.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
-    -moz-border-bottom-colors: none;
-    -moz-border-left-colors: none;
-    -moz-border-right-colors: none;
-    -moz-border-top-colors: none;
-    background-color: #B52C33 !important;
-    border-color: #ddd #ddd transparent;
-    border-image: none;
-    border-style: solid;
-    border-width: 1px;
-    color: #fff !important;
-    cursor: default;
-}
-
-.nav-tabs > li {
-    background-color: #ededed;
-    color: #000;
-    float: left;
-    margin-bottom: -1px;
-}
-
-
-.sidebar .block .block-content {
-    border: 1px solid #e4e5e7;
-}
-
-
 .form-list .customer-name-suffix .name-lastname,
 .form-list .customer-name-middlename .name-firstname,
 .form-list .customer-name-middlename-suffix .name-firstname,
@@ -530,14 +296,6 @@ p.required { font-size:10px; text-align:right; color:#f00; }
 .breadcrumbs li { display:inline; }
 
 /* Page Heading */
-.category-title h1
-{
-background: none repeat scroll 0 0 #f8f7f5 !important;
-    color: #333333 !important;
-    font-size: 18px !important;
-    padding: 10px !important;
-}
-
 .page-title { border-bottom:1px solid #ddd; padding:0 0 5px; margin:0 0 10px;background:#fff; }
 .page-title h1,
 .page-title h2 { font-size:18px; color:#000; }
@@ -555,8 +313,7 @@ background: none repeat scroll 0 0 #f8f7f5 !important;
 .sub-title { clear:both; }
 
 /* Pager */
-
-.pager { padding:5px; margin:5px 0; text-align:center; }
+.pager { border:1px solid #ddd; padding:5px; margin:5px 0; text-align:center; }
 .pager .amount { float:left; }
 .pager .limiter { float:right; }
 .pager .pages { margin:0 135px; }
@@ -565,108 +322,10 @@ background: none repeat scroll 0 0 #f8f7f5 !important;
 .pager .pages .current {}
 
 /* Sorter */
-.sorter {  padding:5px; margin:5px 0; }
-.sorter .view-mode { float:left;margin-top: 5px; }
+.sorter { border:1px solid #ddd; padding:5px; margin:5px 0; }
+.sorter .view-mode { float:left; }
 .sorter .sort-by { float:right; }
 .sorter .link-feed {}
-
-#menu63 .parentMenu
-{display:none !important}
-
-
-.opc-wrapper-opc {
-    
-    padding: 10px !important;
-}
-
-.shipping-block h3 {
-    background: url("http://www.ofertasom.com/skin/frontend/default/ofertasom/images/entrega.gif") repeat scroll 0 0 rgba(0, 0, 0, 0);
-    color: #000000;
-    font-size: 11pt;
-    font-weight: bold;
-    height: 37px;
-    margin: 25px 0 30px;
-    text-transform: uppercase;
-    width: 394px;
-}
-#comentarios .op_block_title {
-    background: url("http://www.ofertasom.com/skin/frontend/default/ofertasom/images/comentarios.gif") repeat scroll 0 0 rgba(0, 0, 0, 0) !important;
-    color: #000000;
-    font-size: 11pt;
-    font-weight: bold;
-    height: 37px;
-    margin: 25px 0 30px;
-    text-transform: uppercase;
-    width: 394px;
-}
-.payment-block  h3{
-    background: url("http://www.loja.ofertasom.com/skin/frontend/default/ofertasom/images/pagamento.gif") repeat scroll 0 0 rgba(0, 0, 0, 0);
-    color: #000000;
-    font-size: 11pt;
-    font-weight: bold;
-    height: 37px;
-    margin: 25px 0 30px;
-    text-transform: uppercase;
-    width: 394px;
-}
-
-.discount-block
-{display:none;}
-
-#opc-review-block img{display:none;}
-
-.opc-col-right  h3:first-child {
-    background: url("http://www.loja.ofertasom.com/skin/frontend/default/ofertasom/images/finalizacao.gif") repeat scroll 0 0 rgba(0, 0, 0, 0);
-    color: #000000;
-    font-size: 11pt;
-    font-weight: bold;
-    height: 37px;
-    margin: 25px 0 30px;
-    text-transform: uppercase;
-    width: 395px;
-}
-
-h3.product-name {
-    padding-top: 30px;
-    width: 255px !important;
-}
-
-.nada .category-products .products-grid li.item {
-    list-style-type: none;
-    padding-right: 20px;
-    width: 33% !important;
-}
-
-#checkout-review-table img
-{
-  display:none !important;
-}
-
-#co-billing-form h3 {
-    background: url("http://www.loja.ofertasom.com/skin/frontend/default/ofertasom/images/fina.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
-    color: #000000;
-    font-size: 11pt;
-    font-weight: bold;
-    height: 37px;
-    margin: 25px 0 30px;
-    text-transform: uppercase;
-    width: 339px;
-}
-
-.divSimpleSlider
-{
-   position:relative !important;
-  left:-1px !important;
-  top:-1px;
-}
-
-
-.divSimpleSliderRotate
-{
-  margin-right:1px;
-  left:-1px !important;
-
-}
 
 /* Toolbar */
 .toolbar {}
@@ -760,35 +419,6 @@ tr.summary-details-excluded { font-style:italic; }
 
 .cards-list dt { margin:5px 0 0; }
 .cards-list .offset { padding:2px 0 2px 20px; }
-
-
-.block-related .block-title
-{
-  background:none !important;
-}
-
-
-.busca {
-    background: none repeat scroll 0 0 #950308 !important;
-    font-size: 14px !important;
-    font-weight: 600 !important;
-    line-height: 44px !important;
-    padding: 0 18px !important;
-    text-transform: uppercase !important;
-	color:#fff !important;
-}
-.busca {
-    border-bottom: 1px solid #ddd;
-    padding: 3px 10px;
-	color:#fff !important;
-}
-
-
-
-
-
-
-
 
 
 .separator { margin:0 3px; }
@@ -989,7 +619,6 @@ tr.summary-details-excluded { font-style:italic; }
 .category-products {}
 
 /* View Type: Grid */
-
 .products-grid { border-bottom:1px solid #ddd; position:relative; }
 .products-grid.last { border-bottom:0; }
 .products-grid li.item { float:left; width:138px; padding:12px 10px 80px; }
@@ -1000,13 +629,7 @@ tr.summary-details-excluded { font-style:italic; }
 .products-grid .availability { line-height:21px; }
 .products-grid .actions { position:absolute; bottom:12px; }
 .col2-left-layout .products-grid,
-.col2-right-layout .products-grid { width:950px; margin:0 auto; }
-
-.product-collateral img,#stcpDiv img {display:none important;}
-
-.category-products .col2-left-layout .products-grid,
-.col2-right-layout .products-grid { width:950px; margin:0 auto; }
-
+.col2-right-layout .products-grid { width:632px; margin:0 auto; }
 .col1-layout .products-grid { width:790px; margin:0 auto; }
 
 /* View Type: List */
@@ -1313,17 +936,13 @@ tr.summary-details-excluded { font-style:italic; }
 .cart .shipping {
     float:left;
     position: relative;
-	width:500px;
 }
 
-.btn-checkout
-{float:right !important;}
-
 /* Shopping Cart Totals */
-.cart .totals { float:right !important;; }
-.cart .totals table { width:100% !important;; }
+.cart .totals { float:right; }
+.cart .totals table { width:100%; }
 .cart .totals table th,
-.cart .totals table td { padding:5px !important;; }
+.cart .totals table td { padding:5px; }
 .cart .totals table th { font-weight:bold; }
 .cart .totals table tfoot th {}
 
@@ -1553,9 +1172,7 @@ tr.summary-details-excluded { font-style:italic; }
 .my-account .title-buttons .link-rss { float:none; margin:0; }
 
 /********** < Dashboard */
-.dashboard {
-    float: right;
-}
+.dashboard {}
 .dashboard .welcome-msg {}
 
 /* Block: Recent Orders */
@@ -1754,4 +1371,3 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#720308', end
 .mini-products-list .product-details {
 margin-left:0px !important;
 }
-

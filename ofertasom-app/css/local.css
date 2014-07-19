@@ -1,7 +1,7 @@
 body { overflow-x:hidden; background: url(http://www.ofertasom.com.br/store/magento/skin/frontend/default/ofertasom/images/bg_fundo.jpg) no-repeat center top !important; }
 
 .wrapper{position:absolute; width:1250px; margin-top: 50px; margin-left:-625px; left:50%; text-align:center; box-shadow: 0px 0px 36px #666; -webkit-box-shadow: 0px 0px 36px #666; -moz-box-shadow: 0px 0px 36px #666; -o-box-shadow: 0px 0px 36px #666;}
-.main {  width: 1250px;box-shadow: 0px 0px 36px #666; -webkit-box-shadow: 0px 0px 36px #666; -moz-box-shadow: 0px 0px 36px #666; -o-box-shadow: 0px 0px 36px #666; }
+.main { box-shadow: 0px 0px 36px #666; -webkit-box-shadow: 0px 0px 36px #666; -moz-box-shadow: 0px 0px 36px #666; -o-box-shadow: 0px 0px 36px #666; }
 .footer { width:1250px; box-shadow: 0px 0px 36px #666; -webkit-box-shadow: 0px 0px 36px #666; -moz-box-shadow: 0px 0px 36px #666; -o-box-shadow: 0px 0px 36px #666; }
 
 .page { width:100%px; margin:0 auto; padding:0px 0; text-align:left; }
@@ -11,15 +11,6 @@ body { overflow-x:hidden; background: url(http://www.ofertasom.com.br/store/mage
 .header-container {width:1250px; height:174px; border-top:13px solid #940309; background: url("http://edgecambr.com/hospedagem/imagens/images/bgtopo.jpg") repeat scroll 0 0 rgba(0, 0, 0, 0);}
 
 .header { padding:0px; border:0px;  background-position: 0px 0px; width:1249px; height:161px;}
-
-
-.my-account
-{
-
-	float: right;
-    width: 930px;
-
-}
 
 
 /*
@@ -62,7 +53,7 @@ body { overflow-x:hidden; background: url(http://www.ofertasom.com.br/store/mage
     margin-bottom: 15px;
     margin-right: 10px;
     margin-top: 20px;
-    overflow: hidden;		clear: both;
+    overflow: hidden;
     
 }
 
@@ -123,8 +114,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#720308', end
 .nav-container:before {content: ""; position:absolute; width: 21px; height:117px; background: url("../images/esquerda.png") no-repeat; top: 0158px; left: -21px; display: block;}
 
 
-
-
 #nav { border:0px; height:62px; padding:0px 0; margin:0px 0; width:100%; }
 #nav li a span { display:block; height:62px; line-height:62px; font-size:17px; vertical-align:middle; text-transform:uppercase; color:#FFF; padding:0px 0; margin:0px 0;}
 #nav li:hover{ height:75px; background-color:#474747;}
@@ -134,32 +123,19 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#720308', end
 .highlight a,.highlight a:hover{color:#940309;}
 
 .col-main {float:left; width: 1250px; min-width:90%; padding:0px;}
-.col-main .my-account 
-{
 
-   padding:10px;
-}
-.product-name a{color:#5F6065;text-transform:inherit;font-size:14px;font-weight: normal;}
+.product-name a{color:#5F6065;text-transform:uppercase;font-size:17px;font-weight: normal;}
 .products-grid li.item { width:25%; padding-right:20px; list-style-type: none; }
-
-
-
-.category-products .products-grid li.item { padding-right:20px; list-style-type: none; }
-.products-grid .product-image { display:block; width:230px; height:230px; margin:0px; background: #FFF; border:1px solid #EEE; text-align:center;overflow:hidden;}
+.products-grid .product-image { display:block; width:230px; height:230px; margin:0px; background: #FFF; border:1px solid #EEE; text-align:center;}
 .widget-new-products .products-grid .product-image { display:block; width:230px; height:230px; padding:10px; background: #FFF; border:1px solid #EEE;}
 .widget-new-products .products-grid .product-image img { width:200px; height:200px; margin:0px; }
 .widget-new-products .products-grid .product-name { text-align:center; }
 .widget-new-products .products-grid .price-box .price { text-align:center; }
 
-.col-main  .account-login,.col-main  .category-products
-{
-   padding:10px ;
-}
-
 .col2-right-layout .products-grid { width:1250px; margin:0 auto; text-align:center; }
 .product-box .price-box { text-align:left; padding-right: 50px;}
 .price-box { text-align:center; padding-right: 50px;}
-.price-box .price { font-size: 26px; font-weight:bold;color:#B70505; }
+.price-box .price { font-size: 32px; font-weight:bold;color:#B70505; }
 div.menu a span {padding-top: 30px;}
 .col2-right-layout .products-grid { width:1250px; margin:0 auto; }
 button.button { overflow:visible; width:auto; border:0; padding:0; margin:0; background:transparent; cursor:pointer; }
